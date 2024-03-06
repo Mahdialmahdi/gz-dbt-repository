@@ -10,9 +10,9 @@ sources:
         description: sales of greenweez data
         columns:
           - name: PK
-            tests:
-              - unique
-                 column_name "(orders_id||'_'||pdt_id)"
+        tests:
+           - unique:
+                column_name: "(orders_id ||'_'|| pdt_id)"
 
       - name: product
         identifier: raw_product
